@@ -2,18 +2,13 @@ package Lingua::31337;
 
 use strict;
 
-require Exporter;
-use POSIX qw[ceil];
-
-use vars qw[@ISA %EXPORT_TAGS @EXPORT_OK $VERSION %CONVERSIONS $LEVEL];
-
-@ISA = qw(Exporter);
+use vars qw[%EXPORT_TAGS @EXPORT $VERSION %CONVERSIONS $LEVEL];
 
 %EXPORT_TAGS = ( 'all' => [ qw[ text231337 ] ] );
 
-@EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
+@EXPORT    = ( @{ $EXPORT_TAGS{'all'} } );
 
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 $LEVEL = 5;
 
